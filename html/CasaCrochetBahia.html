@@ -23,11 +23,20 @@
                 height: 80px;
             }
             
+            #bottombar{
+                position: relative;
+                top: 500px;
+                width: 1270;
+                margin: 0 auto;
+                background-color:#fffbd6;
+                height: 80px;
+            }
+
             #logo{
                 margin-top:8px;
                 width:50px;
                 float:left;
-                margin-right:8px;
+                margin-right:60px;
                 margin-left:10px;
             }
 
@@ -45,8 +54,22 @@
                 margin-right: 25px;
             }
 
+            #github{
+                width: 45px;
+                float: left;
+                margin-top: 25px;
+                
+            }
+
             .grow { 
                 transition: all .2s ease-in-out; 
+            }
+
+            #searchlogo{
+                width: 25px;
+                float: right;
+                margin-top: 30px;
+                margin-right: 115px;
             }
 
             .grow:hover { 
@@ -55,6 +78,7 @@
             }
 
             #textos_topBar{
+                color: rgb(100, 100, 100);
                 float: left;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -63,28 +87,58 @@
                 border-left: 2px #999999 solid;
             }
 
+            #textos_topBar:hover { 
+                color: black;
+            }
+
+            #searchinput{
+                float: left;
+                margin-left: 200px;
+                padding-left: 40px;
+                padding-right: 10px;
+                margin-top: 25px;
+                height: 35px;
+                width: 230px;
+                opacity: 70%;
+            }
+
         </style>
 
     </head>
 
     <body>
-        <div id = "topbar">
+        <nav id = "topbar">
             <img id="logo" src="images/logo.jpg">
+           
             <b><p id = "textos_topBar">Amigurumis</p></b>
             <b><p id = "textos_topBar">Sets de Nacimiento</p></b>
             <b><p id = "textos_topBar">Llaveros</p></b>
             <b><p id = "textos_topBar">Atrapasueños</p></b>
+           
             <a href="https://www.facebook.com/casacrochetbahiablanca">
                 <img id = "social" src = "images/fb.png">
             </a>
+           
             <a href="https://www.instagram.com/casacrochetbahia/">
                 <img id = "social" src = "images/ig.png">
             </a>
-        </div>
+           
+            <div>
+                <input id="searchInput" type="text" id="search" name="search">
+                <img id = "searchlogo" src = "images/search.png">
+            </div>
+
+        </nav>
 
         <div class = "grow">
             <a href = "https://www.whatsapp.com/catalog/5492915779842/?app_absent=0"><img id = "whatsapp" src="images/wp.png"></a>
         </div>
+
+        <footer id = "bottombar">
+            <img id = "github" src="images/git.png">
+            <br>
+            <p>CamilaArena</p>
+        </footer>
 
 
     </body>
