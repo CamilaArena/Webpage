@@ -14,6 +14,7 @@
                 {
                     margin: 0;
                     padding: 0;
+                    font-family: 'Raleway', sans-serif;;
                 }
 
             #topbar{
@@ -21,6 +22,10 @@
                 margin: 0 auto;
                 background-color:#fffbd6;
                 height: 80px;
+            }
+
+            .noBorder{
+                border-left: none !important;
             }
             
             #bottombar{
@@ -34,10 +39,10 @@
 
             #logo{
                 margin-top:8px;
-                width:50px;
+                width:45px;
                 float:left;
                 margin-right:60px;
-                margin-left:10px;
+                margin-left:20px;
             }
 
             #social{
@@ -54,22 +59,8 @@
                 margin-right: 25px;
             }
 
-            #github{
-                width: 45px;
-                float: left;
-                margin-top: 25px;
-                
-            }
-
             .grow { 
                 transition: all .2s ease-in-out; 
-            }
-
-            #searchlogo{
-                width: 25px;
-                float: right;
-                margin-top: 30px;
-                margin-right: 115px;
             }
 
             .grow:hover { 
@@ -83,7 +74,6 @@
                 padding-left: 10px;
                 padding-right: 10px;
                 margin-top: 30px;
-                font-family: 'Raleway', sans-serif;
                 border-left: 2px #999999 solid;
             }
 
@@ -91,15 +81,83 @@
                 color: black;
             }
 
-            #searchinput{
-                float: left;
+            #topmenu{
+                float:left;
+                height:100%;
+            }
+
+            .searchinput{
                 margin-left: 200px;
                 padding-left: 40px;
                 padding-right: 10px;
-                margin-top: 25px;
-                height: 35px;
-                width: 230px;
+                margin-top: 5px;
+                height: 40px;
+                width: 250px;
                 opacity: 70%;
+            }
+
+            #search-box
+            {
+                border: solid rgb(157, 156, 156);
+                border-width: 1px 0 1px 1px;
+                background-color: #fffafa;
+                font-size:14px;
+                width:150px;
+                height: 30px;
+                float:left;
+                margin: 25px 0px 5px 100px;
+                padding:5px;
+            }
+
+            #lupa
+            {
+                border: solid rgb(157, 156, 156);
+                border-width: 1px 1px 1px 0;
+                background-color: fffafa;
+                height:29px;
+                margin-top:25px;
+            }
+
+            #github{
+                width: 40px;
+                margin-top: 25px;   
+            }
+
+            .githubSection{
+                float:left;
+                margin-left: 20px;
+            }
+
+            .textGit{
+                float:right;
+                margin-top: 35px;
+                padding-left: 10px;
+            }
+
+            .igSection{
+                float:left;
+                margin-left: 40px;
+            }
+
+            .textIg{
+                float:right;
+                margin-top: 35px;
+                padding-left: 10px;
+            }
+
+            #ig{
+                width: 30px;
+                margin-top: 30px;
+            }
+
+            .linkedinSection{
+                float:left;
+                margin-left: 50px;
+            }
+
+            #linkedin{
+                width: 30px;
+                margin-top: 27px;
             }
 
         </style>
@@ -109,23 +167,26 @@
     <body>
         <nav id = "topbar">
             <img id="logo" src="images/logo.jpg">
-           
-            <b><p id = "textos_topBar">Amigurumis</p></b>
+           <div class="topmenu">
+            <b><p id = "textos_topBar" class="noBorder">Amigurumis</p></b>
             <b><p id = "textos_topBar">Sets de Nacimiento</p></b>
             <b><p id = "textos_topBar">Llaveros</p></b>
             <b><p id = "textos_topBar">Atrapasueños</p></b>
-           
-            <a href="https://www.facebook.com/casacrochetbahiablanca">
-                <img id = "social" src = "images/fb.png">
-            </a>
-           
-            <a href="https://www.instagram.com/casacrochetbahia/">
-                <img id = "social" src = "images/ig.png">
-            </a>
-           
-            <div>
-                <input id="searchInput" type="text" id="search" name="search">
-                <img id = "searchlogo" src = "images/search.png">
+           </div>
+
+           <div class="topmenu">
+                <a href="https://www.facebook.com/casacrochetbahiablanca">
+                    <img id = "social" src = "images/fb.png">
+                </a>
+            
+                <a href="https://www.instagram.com/casacrochetbahia/">
+                    <img id = "social" src = "images/ig.png">
+                </a>
+           </div>
+        
+            <div id= "topmenu">
+                <input type="text" id="search-box" placeholder="Buscar">
+                <input type="image" id="lupa" src="images/search.png">
             </div>
 
         </nav>
@@ -135,9 +196,27 @@
         </div>
 
         <footer id = "bottombar">
-            <img id = "github" src="images/git.png">
-            <br>
-            <p>CamilaArena</p>
+
+            <div class="githubSection">
+               <a href="https://github.com/CamilaArena?tab=repositories">
+                <img id = "github" src="images/git.png">
+               </a>
+                <b><p class="textGit">CamilaArena</p></b>
+            </div>
+
+            <div class="igSection">
+                <a href="https://www.instagram.com/camiarena99/">
+                    <img id = "ig" src="images/ig.png">
+                </a>
+                <b><p class="textIg">@camiarena99</p></b>
+            </div>
+
+            <div class = "linkedinSection">
+                <a href="https://www.linkedin.com/in/camila-arena-6366ba1b8/"> 
+                    <img id = "linkedin" src="images/linkedin.png">
+                </a>
+            </div>
+
         </footer>
 
 
