@@ -5,32 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-   
-    <style type = "text/css"> 
-        /* Modify the background color */
-        .navbar-custom {  
-            background-color: rgb(193, 201, 193);  
-        }  
-          
-        .navbar-custom .navbar-brand,  
-        .navbar-custom .navbar-text {  
-            color: rgb(102, 13, 245);  
-        }  
-
-        .carousel .carousel-item {
-            max-height:550px;
-        }
-
-        .carousel-item img {
-            object-fit:cover;
-            max-height:550px;
-        }
-
-        .Amigurumis{
-          margin-top: 100 px;
-        }
-    
-    </style>
+    <link rel="stylesheet" href="../css/styles.css">
+        
   </head>
 
   <body>
@@ -53,38 +29,38 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
  
-    <nav class=" navbar navbar-expand-lg bg-body-light">
+    <nav class=" navbar navbar-expand-lg fixed-top navbar-propeties py-0" >
         <div class="container-fluid">
-          <img src="images/logo.jpg" alt="Logo" width="50" height="65" class="d-inline-block align-text-top">
-          <a class="navbar-brand" href="#">Casa Crochet Bahía</a>
+          <img src="images/logo.png" alt="Logo" width="58" height="63" class="d-inline-block align-text-top">
+          <p class="navbar-brand nav-section" href="#">Casa Crochet Bahía</p>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active nav-section" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Amigurumis</a>
+                <a class="nav-link nav-section" href="#">Amigurumis</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Parejitas</a>
+                <a class="nav-link nav-section" href="#">Parejitas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sets Nacimiento</a>
+                <a class="nav-link nav-section" href="#">Sets Nacimiento</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Atrapasueños</a>
+                <a class="nav-link nav-section" href="#">Atrapasueños</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Llaveros</a>
+                <a class="nav-link nav-section" href="#">Llaveros</a>
               </li>
             </ul>
             
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <input class="form-control me-2 search-bar" type="search" placeholder="Búsqueda" aria-label="Search">
+              <button class="btn btn-secondary" type="submit">Buscar</button>
             </form>
           </div>
         </div>
@@ -93,13 +69,13 @@
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/conejos.jpg" class="d-block w-100" alt="...">
+            <img src="images/portada1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="images/amigurumis.jpg" class="d-block w-100" alt="...">
+            <img src="images/portada2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="images/dinos.jpg" class="d-block w-100" alt="...">
+            <img src="images/portada3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -112,25 +88,56 @@
         </button>
       </div>
 
-      <div class="row Amigurumis">
-        <h3>Amigurumis</h3>
-            <div class="col-sm-4">
+      <div class="container">
+        <div class="row amigurumis">
+          <h3 id="black-font">Amigurumis</h3>
+              <div class="col-sm-4">
+                  <div class="card card-block">
+                    <img class="card-img-top" src="images/img3.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Mike Wazowski</h4>
+                      <p class="card-text">$2500</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="card card-block">
+                    <img class="card-img-top" src="images\voldemort.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Voldemort</h4>
+                      <p class="card-text">$3000</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="card card-block">
+                    <img class="card-img-top" src="images\amigurumis.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-4">
                 <div class="card card-block">
-                  <img class="card-img-top" src="images\img2.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="images/conejos.jpg" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="card card-block">
-                  <img class="card-img-top" src="images\dinos.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="images\conejos.jpg" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
             </div>
@@ -140,152 +147,294 @@
                   <div class="card-block">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
             </div>
+        </div>
       </div>
       
-      <div class="row">
-        <h3>Parejitas</h3>
-            <div class="col-sm-4">
+      <div class="container"> 
+        <div class="row">
+          <h3 id="black-font">Parejitas</h3>
+              <div class="col-sm-4">
+                  <div class="card card-block">
+                    <img class="card-img-top" src="images\pareja1.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="card card-block">
+                    <img class="card-img-top" src="images\pareja2.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="card card-block">
+                    <img class="card-img-top" src="images\pareja3.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-4 products">
                 <div class="card card-block">
-                  <img class="card-img-top" src="images\img2.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="images\pareja4.jpg" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="card card-block">
-                  <img class="card-img-top" src="images\dinos.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="images\pareja4.jpg" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="card card-block">
-                  <img class="card-img-top" src="images\amigurumis.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="images\conejos.jpg" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
             </div>
+        </div>
       </div>
-
-      <div class="row">
-        <h3>Sets de Nacimiento</h3>
-              <div class="col-sm-4">
-                  <div class="card card-block">
-                    <img class="card-img-top" src="images\img2.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Button</a>
+      
+      <div class="container"> 
+        <div class="row">
+          <h3 id="black-font">Sets de Nacimiento</h3>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\set1.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
                     </div>
-                  </div>
-              </div>
-              <div class="col-sm-4">
-                  <div class="card card-block">
-                    <img class="card-img-top" src="images\dinos.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Button</a>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\set2.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
                     </div>
-                  </div>
-              </div>
-              <div class="col-sm-4">
-                  <div class="card card-block">
-                    <img class="card-img-top" src="images\amigurumis.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Button</a>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\set4.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
                     </div>
-                  </div>
-              </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\set3.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\set1.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\set1.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                </div>
+                
+        </div>
       </div>
         
-
-    <div class="row">
-      <h3>Atrapasueños</h3>
-            <div class="col-sm-4">
-                <div class="card card-block">
-                  <img class="card-img-top" src="images\img2.jpg" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
+      <div class="container">
+        <div class="row">
+          <h3 id="black-font">Atrapasueños</h3>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card card-block">
-                  <img class="card-img-top" src="images\dinos.jpg" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card card-block">
-                  <img class="card-img-top" src="images\amigurumis.jpg" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
                 </div>
-            </div>
+                <div class="col-sm-4">
+                  <div class="card card-block">
+                    <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="card card-block">
+                    <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="card card-block">
+                    <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
       </div>
 
-      <div class="row">
-        <h3>Llaveros</h3>
-              <div class="col-sm-4">
-                  <div class="card card-block">
-                    <img class="card-img-top" src="images\img2.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Button</a>
+      <div class="container">
+        <div class="row">
+          <h3 id="black-font">Llaveros</h3>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
                     </div>
-                  </div>
-              </div>
-              <div class="col-sm-4">
-                  <div class="card card-block">
-                    <img class="card-img-top" src="images\dinos.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Button</a>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
                     </div>
-                  </div>
-              </div>
-              <div class="col-sm-4">
-                  <div class="card card-block">
-                    <img class="card-img-top" src="images\amigurumis.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Button</a>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                      <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
                     </div>
+                </div> 
+          </div>
+          <div class="row">
+            <h3 id="black-font">Llaveros</h3>
+                  <div class="col-sm-4">
+                      <div class="card card-block">
+                        <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                        <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
                   </div>
-              </div>
-        </div>
+                  <div class="col-sm-4">
+                      <div class="card card-block">
+                        <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                        <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-4">
+                      <div class="card card-block">
+                        <img class="card-img-top" src="images\img1.jpg" alt="Card image cap">
+                        <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                  </div> 
+            </div>
+          
+          
+      </div>
 
       <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js"></script>
+ 
+    <div class="row footer">
+      <h2 id="black-font">¡Seguinos en nuestras redes!</h2>
+      <p><a href="https://www.instagram.com/casacrochetbahia/"><img id="social" src="images/ig.png"></a><a href="https://www.facebook.com/casacrochetbahiablanca"><img id="social" src="images/fb.png"></a></p>
+    </div>
+ 
   </body>
 </html>

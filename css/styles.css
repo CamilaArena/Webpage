@@ -1,0 +1,80 @@
+
+body{
+    position: relative;
+    background-color: white !important;
+}
+
+.carousel .carousel-item {
+    max-height:550px;
+}
+
+.carousel-item img {
+    object-fit:cover;
+    max-height:550px;
+}
+
+.amigurumis{
+  margin-top: 100 px;
+}
+
+.navbar-propeties{
+    background-color: #fffbd6;
+}
+
+.nav-section{
+    color: rgb(159, 159, 159) !important; 
+}
+
+.nav-link:hover{
+    color:black !important; 
+}
+
+.navbar-brand{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.search-bar{
+    background-color: white;
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.card-block{
+    background-color: white;
+    color: black;
+    margin-top: 30px;
+}
+
+.card-img-top{
+    width: 100%;
+}
+
+.footer {
+    background-color:#fffbd6;
+    padding-top: 50px;
+    margin-top:50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#social{
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#black-font{
+    color: black;
+}
+
+.products{
+    position: relative;
+    margin-top: 10px;
+}
